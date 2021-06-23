@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="regression Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="20.274">
+  <properties />
+  
+  
+            <testcase name="navigateToDesktop" time="8.466" classname="com.nopcommerce.demo.testsuite.ComputerTest" />
+                <testcase name="navigateToNotebooks" time="7.116" classname="com.nopcommerce.demo.testsuite.ComputerTest" />
+                <testcase name="navigateToSoftware" time="4.692" classname="com.nopcommerce.demo.testsuite.ComputerTest" />
+      
+</testsuite>

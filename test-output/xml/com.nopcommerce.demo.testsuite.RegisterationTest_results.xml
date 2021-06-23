@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="regression Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="59.358">
+  <properties />
+  
+  
+            <testcase name="verifyUserShouldNavigateToRegisterPage" time="1.860" classname="com.nopcommerce.demo.testsuite.RegisterationTest" />
+                <testcase name="verifyUserShouldNotRegisterWithIncompleteDetails" time="5.422" classname="com.nopcommerce.demo.testsuite.RegisterationTest" />
+                <testcase name="verifyUserRegisterSuccessfully" time="52.076" classname="com.nopcommerce.demo.testsuite.RegisterationTest" />
+      
+</testsuite>

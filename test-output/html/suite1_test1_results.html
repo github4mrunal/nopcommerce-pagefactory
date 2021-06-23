@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - regression Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>regression Test</h1>
+<p>
+  Test duration: 185.318s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.LoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldLoginSuccessfully
+      </td>
+  <td class="duration">
+    45.608s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Login Link[[ChromeDriver: chrome on WINDOWS (3f634cb2791145139ac460749c61d8ad)] -&gt; xpath: //a[text()=&apos;Log in&apos;]]&lt;br&gt;<br />
+                                Entering email address : tanyanagpal7@gmail.com to email field : [[ChromeDriver: chrome on WINDOWS (3f634cb2791145139ac460749c61d8ad)] -&gt; xpath: //input[@id=&apos;Email&apos;]]&lt;br&gt;<br />
+                                Entering password : tvf2018 to password field : [[ChromeDriver: chrome on WINDOWS (3f634cb2791145139ac460749c61d8ad)] -&gt; xpath: //input[@id=&apos;Password&apos;]]&lt;br&gt;<br />
+                                Clicking on login button : [[ChromeDriver: chrome on WINDOWS (3f634cb2791145139ac460749c61d8ad)] -&gt; xpath: //button[contains(text(), &apos;Log in&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;LAPTOP-J36EAJNM&apos;, ip: &apos;10.75.107.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)<br />
+              org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)<br />
+              java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)<br />
+              org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)<br />
+              com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)<br />
+              org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br />
+              org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)<br />
+              org.openqa.selenium.json.Json.toJson(Json.java:42)<br />
+              org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)<br />
+              org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)<br />
+              org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:595)<br />
+              com.nopcommerce.demo.utility.Utility.mouseHoverToElement(Utility.java:78)<br />
+              com.nopcommerce.demo.pages.LoginPage.getHomePageText(LoginPage.java:82)<br />
+              com.nopcommerce.demo.testsuite.LoginTest.verifyUserShouldLoginSuccessfully(LoginTest.java:37)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.lang.reflect.InvocationTargetException</a><br />
+        <div class="stackTrace" id="exception-1">
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:498)<br />
+                      org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)<br />
+                      java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)<br />
+                      com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)<br />
+                      org.openqa.selenium.json.Json.toJson(Json.java:42)<br />
+                      org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)<br />
+                      org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)<br />
+                      org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:595)<br />
+                      com.nopcommerce.demo.utility.Utility.mouseHoverToElement(Utility.java:78)<br />
+                      com.nopcommerce.demo.pages.LoginPage.getHomePageText(LoginPage.java:82)<br />
+                      com.nopcommerce.demo.testsuite.LoginTest.verifyUserShouldLoginSuccessfully(LoginTest.java:37)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:498)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+                      com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//h2[text()=&apos;Welcome to our store&apos;]<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;LAPTOP-J36EAJNM&apos;, ip: &apos;10.75.107.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</a><br />
+        <div class="stackTrace" id="exception-2">
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br />
+                      com.sun.proxy.$Proxy8.getWrappedElement(Unknown Source)<br />
+                      org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)<br />
+                      org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)<br />
+                      org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)<br />
+                      org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:498)<br />
+                      org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)<br />
+                      java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)<br />
+                      com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)<br />
+                      org.openqa.selenium.json.Json.toJson(Json.java:42)<br />
+                      org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)<br />
+                      org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)<br />
+                      org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)<br />
+                      org.openqa.selenium.interactions.Actions.perform(Actions.java:595)<br />
+                      com.nopcommerce.demo.utility.Utility.mouseHoverToElement(Utility.java:78)<br />
+                      com.nopcommerce.demo.pages.LoginPage.getHomePageText(LoginPage.java:82)<br />
+                      com.nopcommerce.demo.testsuite.LoginTest.verifyUserShouldLoginSuccessfully(LoginTest.java:37)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:498)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+                      com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.ComputerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  navigateToDesktop
+      </td>
+  <td class="duration">
+    8.466s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Desktop options:[[ChromeDriver: chrome on WINDOWS (d4f6ac118087c6ceedcc53ee6177e2fd)] -&gt; xpath: //body[1]/div[6]/div[2]/ul[1]/li[1]/ul[1]/li[1]/a[1]]&lt;br&gt;<br />
+                                Desktop text:[[ChromeDriver: chrome on WINDOWS (d4f6ac118087c6ceedcc53ee6177e2fd)] -&gt; xpath: //body[1]/div[6]/div[3]/div[1]/div[3]/div[1]/div[1]/h1[1]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  navigateToNotebooks
+      </td>
+  <td class="duration">
+    7.116s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on notebook options:[[ChromeDriver: chrome on WINDOWS (561f1b285ab7bea648bf6a9e01a83307)] -&gt; xpath: //body[1]/div[6]/div[2]/ul[1]/li[1]/ul[1]/li[2]/a[1]]&lt;br&gt;<br />
+                                Notebook text:[[ChromeDriver: chrome on WINDOWS (561f1b285ab7bea648bf6a9e01a83307)] -&gt; xpath: //body[1]/div[6]/div[3]/div[1]/div[3]/div[1]/div[1]/h1[1]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  navigateToSoftware
+      </td>
+  <td class="duration">
+    4.692s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on software options:[[ChromeDriver: chrome on WINDOWS (d563169c05cebdf4edac8f48d58513ec)] -&gt; xpath: //body[1]/div[6]/div[2]/ul[1]/li[1]/ul[1]/li[3]/a[1]]&lt;br&gt;<br />
+                                Notebook text:[[ChromeDriver: chrome on WINDOWS (d563169c05cebdf4edac8f48d58513ec)] -&gt; xpath: //body[1]/div[6]/div[3]/div[1]/div[3]/div[1]/div[1]/h1[1]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.LoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLoginPage
+      </td>
+  <td class="duration">
+    1.509s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Login Link[[ChromeDriver: chrome on WINDOWS (b5bd2a3a707dc944b1cad36157cf2cb6)] -&gt; xpath: //a[text()=&apos;Log in&apos;]]&lt;br&gt;<br />
+                                Getting text from : [[ChromeDriver: chrome on WINDOWS (b5bd2a3a707dc944b1cad36157cf2cb6)] -&gt; xpath: //div[@class=&apos;page-title&apos;]//h1]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNotLoginWithInvalidCredentials
+      </td>
+  <td class="duration">
+    9.072s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Login Link[[ChromeDriver: chrome on WINDOWS (afa4c3e7cf55b22c563a846c40a7276d)] -&gt; xpath: //a[text()=&apos;Log in&apos;]]&lt;br&gt;<br />
+                                Entering email address : tanyanagpal1@gmail.com to email field : [[ChromeDriver: chrome on WINDOWS (afa4c3e7cf55b22c563a846c40a7276d)] -&gt; xpath: //input[@id=&apos;Email&apos;]]&lt;br&gt;<br />
+                                Entering password : tvf to password field : [[ChromeDriver: chrome on WINDOWS (afa4c3e7cf55b22c563a846c40a7276d)] -&gt; xpath: //input[@id=&apos;Password&apos;]]&lt;br&gt;<br />
+                                Clicking on login button : [[ChromeDriver: chrome on WINDOWS (afa4c3e7cf55b22c563a846c40a7276d)] -&gt; xpath: //button[contains(text(), &apos;Log in&apos;)]]&lt;br&gt;<br />
+                                Getting Error Message[[ChromeDriver: chrome on WINDOWS (afa4c3e7cf55b22c563a846c40a7276d)] -&gt; xpath: //div[@class = &apos;message-error validation-summary-errors&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.RegisterationTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserRegisterSuccessfully
+      </td>
+  <td class="duration">
+    52.076s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Register link : [[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //a[contains( text(), &apos;Register&apos;)]]&lt;br&gt;<br />
+                                Get Register Page Text[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //h1[text()=&apos;Register&apos;]]<br />
+                                Clicking on Gender Radio Button &apos;Male&apos; [[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //span[@class = &apos;male&apos;]]&lt;br&gt;<br />
+                                Entering First Name[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //input[@name = &apos;FirstName&apos;]]&lt;br&gt;<br />
+                                Entering Last Name[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //input[@id = &apos;LastName&apos;]]&lt;br&gt;<br />
+                                Entering Date Of Birth[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //select[@name = &apos;DateOfBirthDay&apos;]]&lt;br&gt;<br />
+                                Entering Month of Birth[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //select[@name = &apos;DateOfBirthMonth&apos;]]&lt;br&gt;<br />
+                                Entering Year Of Birth[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //select[@name = &apos;DateOfBirthYear&apos;]]&lt;br&gt;<br />
+                                Entering Email[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //input[@id = &apos;Email&apos;]]&lt;br&gt;<br />
+                                Entering Company Name[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //input[@id = &apos;Company&apos;]]&lt;br&gt;<br />
+                                Entering Password[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //input[@id = &apos;Password&apos;]]&lt;br&gt;<br />
+                                Entering Confirm Password[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //input[@id = &apos;ConfirmPassword&apos;]]&lt;br&gt;<br />
+                                Clicking On Register Button[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //button[@id = &apos;register-button&apos;]]&lt;br&gt;<br />
+                                Get Registeration Success Text[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //div[contains(text(), &apos;Your registration completed&apos;)]]&lt;br&gt;<br />
+                                Clicking on Log out[[ChromeDriver: chrome on WINDOWS (e506cb8517f8cff4ed2f101498d7b004)] -&gt; xpath: //a[@class=&apos;ico-logout&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToRegisterPage
+      </td>
+  <td class="duration">
+    1.860s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Register link : [[ChromeDriver: chrome on WINDOWS (810bd39abe959a5465be05b36d9b4000)] -&gt; xpath: //a[contains( text(), &apos;Register&apos;)]]&lt;br&gt;<br />
+                                Get Register Page Text[[ChromeDriver: chrome on WINDOWS (810bd39abe959a5465be05b36d9b4000)] -&gt; xpath: //h1[text()=&apos;Register&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNotRegisterWithIncompleteDetails
+      </td>
+  <td class="duration">
+    5.422s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Register link : [[ChromeDriver: chrome on WINDOWS (a105cbc1891c1cc2bf95beeedefc0551)] -&gt; xpath: //a[contains( text(), &apos;Register&apos;)]]&lt;br&gt;<br />
+                                Get Register Page Text[[ChromeDriver: chrome on WINDOWS (a105cbc1891c1cc2bf95beeedefc0551)] -&gt; xpath: //h1[text()=&apos;Register&apos;]]<br />
+                                Clicking On Register Button[[ChromeDriver: chrome on WINDOWS (a105cbc1891c1cc2bf95beeedefc0551)] -&gt; xpath: //button[@id = &apos;register-button&apos;]]&lt;br&gt;<br />
+                                Get error message from First Name[[ChromeDriver: chrome on WINDOWS (a105cbc1891c1cc2bf95beeedefc0551)] -&gt; xpath: //span[text()=&apos;First name is required.&apos;]]&lt;br<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
